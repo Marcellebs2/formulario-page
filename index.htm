@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body background="fundo.jpg">
+    <h1 id="titulo">Programador</h1>
+    <br>
+    <form name="form" method="post">
+        <div class="form-container">
+                <fieldset class="grupo">
+                    <div class="input-box nome">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-box endereco">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="input-box email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box tel">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+                    </div>
+                </fieldset>
+                
+                <div class="campo">
+                    <label for="exp">Experiência</label><br>
+                    <textarea name="exp" id="exp" cols="43" rows="5" placeholder="Fale mais sobre você" required></textarea>
+                </div>
+                
+                <div class="campo select">
+                    <label for="formacao">Grau acadêmico</label><br>
+                    <select name="formacao" id="formacao" required>
+                        <option selected disabled value="">Escolha</option>
+                        <option value="fundamental">Fundamental</option>
+                        <option value="medio">Médio</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="superior">Superior</option>
+                    </select>
+                </div>
+                <div class="campo check">
+                    <center>
+                        <label for="conhecimento">Áreas de conhecimento</label><br>
+                    </center>
+                    <label for="conhecimento" class="checklist">
+                        <input type="checkbox" name="conhecimento" value="front-end" id="tecnologia1"> 
+                        <label for="tecnologia1">Front End</label>
+                        <input type="checkbox" name="conhecimento" value="back-end" id="tecnologia2"> 
+                        <label for="tecnologia2">Back End</label>
+                        <input type="checkbox" name="conhecimento" value="full-stack" id="tecnologia3"> 
+                        <label for="tecnologia3">FullStack</label>
+                        <input type="checkbox" name="conhecimento" value="java" id="tecnologia4">  
+                        <label for="tecnologia4">Java</label><br>
+                        <input type="checkbox" name="conhecimento" value="js" id="tecnologia5"> 
+                        <label for="tecnologia5">JavaScript</label>
+                        <input type="checkbox" name="conhecimento" value="python" id="tecnologia6">
+                        <label for="tecnologia6">Python</label>
+                        <input type="checkbox" name="conhecimento" value="c" id="tecnologia7">
+                        <label for="tecnologia7">C++</label>
+                        <input type="checkbox" name="conhecimento" value="ts" id="tecnologia8"> 
+                        <label for="tecnologia8">TypeScript </label><br>
+                        <input type="checkbox" name="conhecimento" value="mysql" id="tecnologia9"> 
+                        <label for="tecnologia9">MySQL</label>
+                        <input type="checkbox" name="conhecimento" value="plsql" id="tecnologia10"> 
+                        <label for="tecnologia10">PL/SQL</label>
+                        <input type="checkbox" name="conhecimento" value="ruby" id="tecnologia11"> 
+                        <label for="tecnologia11">Ruby</label>
+                        <input type="checkbox" name="conhecimento" value="php" id="tecnologia12"> 
+                        <label for="tecnologia12">PHP</label><br>
+                    </label>
+                </div>
+                
+                <fieldset class="grupo links">
+                    <div>
+                        <label for="linkedin">Linkedin</label><br>
+                        <input type="link" name="linkedin" id="linkedin" placeholder="Coloque o link aqui">
+                    </div>
+                    <div>
+                        <label for="github">GitHub</label><br>
+                        <input type="link" name="github" id="github" placeholder="Coloque o link aqui">
+                    </div>
+                </fieldset>
+                
+                <div class="botao">
+                    <button type="button">Enviar</button>
+                    <input type="reset" name="limpar" id="limpar" value="Limpar">
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
